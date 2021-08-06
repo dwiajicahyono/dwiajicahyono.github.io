@@ -187,9 +187,14 @@
     </script>
     <script>
           alert("1 <3 U");
-          var snd_music = new Audio('dandelions.mp3');
-          snd_music.loop = true;
-          snd_music.play();
+          var home = document.getElementById('home');
+		        var snd_music = new Audio('dandelions.mp3');
+        		snd_music.loop = true;
+		        function pok(e) {
+        		    if(snd_music.paused);
+		            snd_music.play();
+        		}
+        		home.addEventListener('mousedown', function(e) { pok(e); e.preventDefault(); });
     </script>
 
 
