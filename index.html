@@ -16,6 +16,11 @@
     <title>Portfolio | Dwi Aji Cahyono</title>
   </head>
   <body id="home">
+
+    <audio id="music"  src="dandelions.mp3" loop="loop">
+
+    </audio>
+
     <!-- Navbar -->
      <nav class="navbar navbar-expand-lg navbar-dark shadow-sm fixed-top" style = "background-color:#1E1E2C;">
   <div class="container">
@@ -43,6 +48,8 @@
   </div>
 </nav>
     <!-- Akhir Navbar -->
+
+    
 
     <!-- Jumbotron -->
     <div class="jumbotron text-center">
@@ -78,12 +85,8 @@
      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#2D2D44" fill-opacity="1" d="M0,160L48,144C96,128,192,96,288,112C384,128,480,192,576,208C672,224,768,192,864,181.3C960,171,1056,181,1152,181.3C1248,181,1344,171,1392,165.3L1440,160L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
     </section>
     <!-- menambahkan audio -->
-    <div id="music">
-      <audio autoplay>
-        <source src="dandelions.mp3" type="audio/mpeg">
-        <p>If you can read this, your browser does not support the audio element.</p>
-      </audio>
-      </div>
+ 
+
     <!-- Akhir About -->
 
     <!-- Gallery -->
@@ -171,7 +174,7 @@
       <!-- Akhir Contact ig -->
     </section>
     <!-- Akhir Contact -->
-    <!-- Footer -->
+    <!-- Footer --> 
     <footer style="background-color: #2D2D44 ; color: #FFFFFF; text-align: center;">
       <p>Created with love by Dwi Aji Cahyono</p>
     </footer>
@@ -186,15 +189,10 @@
 
     </script>
     <script>
-          alert("1 <3 U");
-          var home = document.getElementById('home');
-		        var snd_music = new Audio('dandelions.mp3');
-        		snd_music.loop = true;
-		        function pok(e) {
-        		    if(snd_music.paused);
-		            snd_music.play();
-        		}
-        		home.addEventListener('mousedown', function(e) { pok(e); e.preventDefault(); });
+         
+window.onload=function(){
+    document.getElementById("music").play();
+  }
     </script>
 
 
